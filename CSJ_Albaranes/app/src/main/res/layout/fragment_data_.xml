@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FotoFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.57"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/san_jose_logo"
+            android:scaleType="fitStart"/>
+
+        <ImageView
+            android:id="@+id/remoteeye_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/remoteeye_icon4"
+            android:scaleType="fitEnd"
+            android:clickable="true"
+            android:contentDescription="hf_commands:remote eye|hf_show_text"/>
+
+        <ImageView
+            android:id="@+id/zoom_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.45"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/zoom_icon"
+            android:scaleType="fitEnd"
+            android:clickable="true"
+            android:contentDescription="hf_commands:zoom|hf_show_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginVertical="40dp">
+
+            <android.widget.Button
+                android:id="@+id/fotoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="275dp"
+                android:layout_weight="1"
+                android:text="foto"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_doc_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.65"
+            android:background="@color/gray">
+
+            <android.widget.Button
+                android:id="@+id/btnSiguiente_Docs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Siguiente"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
